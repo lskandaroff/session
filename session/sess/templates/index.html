@@ -1,0 +1,21 @@
+{% load i18n %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<a href="" >{% trans 'Asosiy sahifa' %}</a>
+<a href="" >{% trans 'Biz haqimizda' %}</a>
+<a href="" >{% trans 'Kontakt' %}</a>
+
+
+<h2>Hello bro</h2>
+{% for n in news %}
+<h3>{{ n.title }}</h3>
+<h4>{{ n.text }}</h4>
+{% endfor %}
+</body>
+</html>

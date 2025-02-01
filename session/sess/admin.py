@@ -1,3 +1,9 @@
 from django.contrib import admin
 
-# Register your models here.
+from modeltranslation.admin import TranslationAdmin
+
+from .models import *
+
+@admin.register(News)
+class NewsAdmin(TranslationAdmin):
+    fields = ('title', 'text')
